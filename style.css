@@ -1,0 +1,146 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.header {
+  height: 12%;
+  width: 100%;
+  background-color: white;
+}
+
+.sidebar {
+  left: 0;
+  width: 8rem;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  background-color: whitesmoke;
+  box-shadow: 5px 0 10px -2px #888;
+}
+
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__menuitem {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__logo img {
+  width: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sidebar__menu_profile {
+  width: 50px;
+  margin-bottom: 2px;
+}
+
+.sidebar__menu_plan {
+  width: 40px;
+  margin-bottom: 2px;
+}
+
+.sidebar__menu_settings {
+  width: 45px;
+  margin-bottom: 2px;
+}
+
+.sidebar__menuitem p {
+  font-size: small;
+}
+
+.page {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page__section {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page__sectioncontent {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.page__sectioncontent_triangle {
+  transform: rotate(270deg);
+  margin-right: 5px;
+}
+
+.page__sectioncontent h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: darkcyan;
+}
+
+.page__searchbar {
+  width: 100%;
+  height: 9%;
+}
+
+.page__seperator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page__imagesection {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page__imageblock {
+  height: 150px;
+  width: 150px;
+  padding: 35px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
